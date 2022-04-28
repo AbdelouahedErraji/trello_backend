@@ -21,7 +21,7 @@ mongoose.connect(process.env.DATABASE, {
 app.use(express.json());
 
 //Routes Middleware
-app.use('/board', boardRoutes);
+app.use('/boards', boardRoutes);
 
 app.get('/' ,(req, res) => {
   res.status(200).send("Hello");
