@@ -30,16 +30,6 @@ exports.boardUpdate = async (req, res) => {
     .then((board) => {res.json(board)})
     .catch((err) => {console.log(err)});
 
-  // const board = await Board.findById(req.params.id);
-  // Board.assign(board, req.body);
+
 }
 
-// exports.boardById = async (req, res) => {
-//   try{
-//     const board = await Board.findById(req.params.id);
-//     res.json(board);
-//     console.log(board);
-//   } catch(err) {
-//     console.log(err)
-//   }
-// }
